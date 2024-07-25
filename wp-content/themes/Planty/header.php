@@ -15,9 +15,18 @@
             </a>  
         </div>
         <nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
-            <?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>' ) ); ?>
-        </nav>
-    </header>
-<div id="container">
-<main id="content" role="main">
+                <label for="toggle" class="toggle">☰</label>
+                <input type="checkbox" id="toggle">
+                <?php wp_nav_menu(array(
+                    'theme_location' => 'main-menu',
+                    'link_before' => '<span itemprop="name">',
+                    'link_after' => '</span>',
+                    'menu_id' => 'menu-principal',
+                    'container' => '',
+                )); ?>
+            </nav>
+        </header>
+        <div id="container">
+            <main id="content" role="main">
+
 
