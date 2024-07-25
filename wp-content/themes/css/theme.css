@@ -1,0 +1,227 @@
+/*GENERAL*/
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
+:root {
+    --original-planty-green: #3b8e46;
+    --white-coffee-planty: #ece2da;
+    --planty-pale-rose: #e0b9b4; 
+    --planty-salmon-rose: #dc9f96; 
+    --red-argile-planty:#d2776a;
+    --red-hover-planty: #c02e44;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    width:100%;
+    overflow: hidden;
+
+}
+/* ===================================== */
+/*                 HEADER                */
+/* ===================================== */
+#header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    width: 201px;
+}
+#menu-principal {
+    display: flex;
+    align-items: center;
+}
+#menu-principal li {
+    display: inline-block;
+    margin-inline-start: 20px;
+    order: 0;
+}
+#menu-principal li.lien-admin {
+    order: 2;
+    padding-right: 24px;
+}
+#menu-principal li.commander {
+    background-color: var(--planty-salmon-rose);
+    height: 80px;
+    margin: 0;
+    padding: 30px 24px;
+    font-weight: 700;
+    order:3;
+}
+.commander a {
+    color: #fff;
+}
+#menu-principal li.commander:hover {
+    background-color: var(--red-hover-planty);
+}
+a {
+    text-decoration: none;
+    color:#000;
+}
+h2 {
+    font-family:  "Syne", sans-serif;
+    font-weight: 800;
+    color: var(--original-planty-green);
+}
+
+h3 {
+    font-family:  "Syne", sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    color: var(--original-planty-green);
+}
+h4 {
+    font-family:  "Syne", sans-serif;   
+}
+p,a {
+    font-family: "Syne", sans-serif;
+    font-weight: 400;
+    padding: 20px;
+}
+p{
+    font-size: 20px;
+    line-height: 1.2;
+}
+/* ===================================== */
+/*      SECTION HERO PAGE D'ACCEUIL      */
+/* ===================================== */
+.titre-accueil {
+    background-color: var(--white-coffee-planty);
+    font-size: 38px;
+    padding-top: 100px;
+    width: 100%;
+}
+.hero-feuille>div {
+    background-color: var(--white-coffee-planty);
+    border-radius: 0% 0% 50% 50% / 0% 0% 10% 10% ;
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.canette {
+    z-index: 1;
+}
+.feuille-gauche {
+    position: absolute;
+    top:26%;
+    align-self: center;
+    margin-right: 360px;
+}
+.feuille-droite {
+    position: absolute;
+    top:26%;
+    align-self: center;
+    margin-left: 352px;
+}
+
+/* ===================================== */
+/*     SECTION ENERGIE PAGE D'ACCEUIL    */
+/* ===================================== */
+.energie {
+    min-height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.energie-plantes {
+    font-weight: 600;
+    font-size: 32px;
+    height: 60px;
+    padding: 60px 0 10px 0;
+}
+/* ===================================== */
+/*     SECTION GOÛTS PAGE D'ACCEUIL      */
+/* ===================================== */
+.saveurs {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--white-coffee-planty);
+}
+.gouts {
+    padding-top: 20px;
+    font-size: 32px;
+    color: var(--red-argile-planty);
+}
+.galerie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white-coffee-planty);
+    max-height: 780px;
+    padding: 20px 0 50px 0;
+    border-radius: 0% 0% 50% 50% / 0% 0% 3% 3% ;
+}
+.galerie>div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    width: 80%;
+    max-width: 960px;
+}
+.galerie>div figure {
+    width:40%;  
+}
+
+/* ===================================== */
+/*      SECTION AVIS PAGE D'ACCEUIL      */
+/* ===================================== */
+.avis>div {
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.avis-titre {
+    font-size: 30px;
+    padding: 40px 0 84px 0;
+    width: 100%;
+    color: var(--original-planty-green);
+}
+.avis-flexbox>div {  
+    width: 80%;
+    max-width: 1152px;
+    margin: auto;
+    gap:40px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:center ;
+}
+.avis-boite {
+    width:33%;
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
+.avis-boite>div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.portrait>figure {    
+    width: 33%;
+}
+.comment {
+    width: 66%;
+}
+.comment h4 {
+    padding: 20px 0 0 20px;
+    font-family:  "Syne", sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: var(--original-planty-green);
+}
+.comment p {
+    font-size: 16px;
+}
