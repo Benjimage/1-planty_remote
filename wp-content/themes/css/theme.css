@@ -225,3 +225,87 @@ p{
 .comment p {
     font-size: 16px;
 }
+/* ===================================== */
+/*        SECTION HERO PAGE CONTACT      */
+/* ===================================== */
+.rencontrer{
+    background-color: var(--white-coffee-planty);
+    border-radius: 0% 0% 50% 50% / 0% 0% 20% 20% ;
+    height: 420px ;
+    padding-bottom: 0;
+
+}
+.rencontrer>div {
+    display: flex;
+   flex-direction: column;
+
+
+}
+.rencontrer-text>div {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 60%;    
+}
+.rencontrer-text>div h2 {
+    color: var(--red-argile-planty);
+    font-size: 38px;
+}
+.rencontrer-text>div p {
+    padding-top: 30px;
+    font-size: 20px;
+    width: 720px;
+}
+.deco-fruit {
+    align-self: center;    
+}
+.rencontrer img {
+    width: 180px;
+    margin-right: 980px;
+    position: relative; 
+    top:70px;
+}
+
+/* ===================================== */
+/*      SECTION ÉQUIPE PAGE CONTACT      */
+/* ===================================== */
+.equipe>div {
+    height: 430px;
+    padding-top: 52px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.contact-titre {
+    color: #000;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.equipe-flexbox>div {
+    padding:50px;
+    gap:160px;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.equipe-boite h4{
+    font-family:  "Syne", sans-serif;
+    color: #000;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding-top: 20px;
+}
+.deco-feuille {
+    align-self: center;
+    margin-left: 72rem;
+    position: absolute;
+    bottom: -42px;
+}
+.contact {
+    padding-top: 40px;
+    margin-top: 40px;
+    background-color: var(--white-coffee-planty);
+}
